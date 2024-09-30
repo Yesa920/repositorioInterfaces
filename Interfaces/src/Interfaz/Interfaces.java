@@ -65,6 +65,5 @@ public class Interfaces extends JFrame {
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.setBounds(156, 165, 85, 21);
 		contentPane.add(btnNewButton);
-		cacaculopedopis
 	}
 }
