@@ -43,22 +43,22 @@ public class Boxlayout extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
-		contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.X_AXIS));
+		contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
 		
-		JLabel lblNewLabel = new JLabel("Uno");
-		contentPane.add(lblNewLabel);
+		JButton btnNewButton = new JButton("Uno");
+		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel_1 = new JLabel(" Dos");
-		contentPane.add(lblNewLabel_1);
+		JButton btnNewButton_1 = new JButton("Dos");
+		contentPane.add(btnNewButton_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("Tres");
-		contentPane.add(lblNewLabel_2);
+		JButton btnNewButton_2 = new JButton("Tres");
+		contentPane.add(btnNewButton_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("Cuatro");
-		contentPane.add(lblNewLabel_3);
+		JButton btnNewButton_3 = new JButton("Cuatro");
+		contentPane.add(btnNewButton_3);
 		
-		JLabel lblNewLabel_4 = new JLabel("cinco");
-		contentPane.add(lblNewLabel_4);
+		JButton btnNewButton_4 = new JButton("Cinco");
+		contentPane.add(btnNewButton_4);
 	}
 
 }

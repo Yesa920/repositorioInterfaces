@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 
-public class Interfaces extends JFrame {
+public class Usuario_Contraseña extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -24,7 +24,7 @@ public class Interfaces extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Interfaces frame = new Interfaces();
+					Usuario_Contraseña frame = new Usuario_Contraseña();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,7 +36,7 @@ public class Interfaces extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Interfaces() {
+	public Usuario_Contraseña() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
