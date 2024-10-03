@@ -59,13 +59,13 @@ public class Ultimo_ejercicio extends JFrame {
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_3 = new JLabel("New label");
-		lblNewLabel_3.setIcon(new ImageIcon(Ultimo_ejercicio.class.getResource("/logo.png")));
+		lblNewLabel_3.setIcon(new ImageIcon(Ultimo_ejercicio.class.getResource("/Interfaz/logo.png")));
 		lblNewLabel_3.setBounds(264, 5, 150, 150);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel = new JLabel("LOGO");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
-		lblNewLabel.setIcon(new ImageIcon(Ultimo_ejercicio.class.getResource("/favicon.png")));
+		lblNewLabel.setIcon(new ImageIcon(Ultimo_ejercicio.class.getResource("/Interfaz/favicon.png")));
 		lblNewLabel.setBounds(26, 10, 139, 35);
 		contentPane.add(lblNewLabel);
 		
@@ -80,7 +80,7 @@ public class Ultimo_ejercicio extends JFrame {
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
-		lblNewLabel_2.setIcon(new ImageIcon(Ultimo_ejercicio.class.getResource("/city.png")));
+		lblNewLabel_2.setIcon(new ImageIcon(Ultimo_ejercicio.class.getResource("/Interfaz/city.png")));
 		lblNewLabel_2.setBounds(238, 0, 198, 276);
 		contentPane.add(lblNewLabel_2);
 		
