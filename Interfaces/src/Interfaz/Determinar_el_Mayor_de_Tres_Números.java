@@ -30,7 +30,7 @@ public class Determinar_el_Mayor_de_Tres_Números {
 		else if (numero3 > numero1 && numero2>numero1) {
 			System.out.println("El numero más grande es " + numero3);
 		}
-		else if (numero2 == numero1 && numero3==numero2) {
+		else {
 			System.out.println("Los numeros son iguales");
 		}
 	}
