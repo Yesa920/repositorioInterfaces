@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Menú_con_switch {
 	public static void main(String[]args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Presiona 1 para una suma , presiona para una 2 resta, presiona 3 para multiplicar,"
+		System.out.println("Presiona 1 para una suma , presiona para una 2 resta, presiona 3 para multiplicar,"
 				+ " presiona 4 para dividir y presiona 5 para salir");
 		String variable = scanner.nextLine();
 		
@@ -14,13 +14,13 @@ public class Menú_con_switch {
 		switch(numero) {
 		case 1:
 			Scanner scanner1 = new Scanner(System.in);
-			System.out.print("Dime el primer numero");
+			System.out.println("Dime el primer numero");
 			
 			String variable1 = scanner1.nextLine();
 			
 			int numero1 = Integer.parseInt(variable1);
 			Scanner scanner2 = new Scanner(System.in);
-			System.out.print("Dime el sundo numero");
+			System.out.println("Dime el sundo numero");
 			
 			String variable2 = scanner2.nextLine();
 			
@@ -33,14 +33,14 @@ public class Menú_con_switch {
 			break;
 		case 2:
 			Scanner scanner12 = new Scanner(System.in);
-			System.out.print("Dime el primer numero");
+			System.out.println("Dime el primer numero");
 			
 			String variable12 = scanner12.nextLine();
 			
 			int numero12 = Integer.parseInt(variable12);
 			
 			Scanner scanner22 = new Scanner(System.in);
-			System.out.print("Dime el sundo numero");
+			System.out.println("Dime el sundo numero");
 			
 			String variable22 = scanner22.nextLine();
 			
@@ -53,13 +53,13 @@ public class Menú_con_switch {
 			break;
 		case 3:
 			Scanner scanner13 = new Scanner(System.in);
-			System.out.print("Dime el primer numero");
+			System.out.println("Dime el primer numero");
 			String variable13 = scanner13.nextLine();
 			
 			int numero13 = Integer.parseInt(variable13);
 			
 			Scanner scanner23 = new Scanner(System.in);
-			System.out.print("Dime el sundo numero");
+			System.out.println("Dime el sundo numero");
 			String variable23 = scanner23.nextLine();
 			
 			int numero23 = Integer.parseInt(variable23);
@@ -71,13 +71,13 @@ public class Menú_con_switch {
 			break;
 		case 4:
 			Scanner scanner14 = new Scanner(System.in);
-			System.out.print("Dime el primer numero");
+			System.out.println("Dime el primer numero");
 			String variable14 = scanner14.nextLine();
 			
 			int numero14 = Integer.parseInt(variable14);
 			
 			Scanner scanner24 = new Scanner(System.in);
-			System.out.print("Dime el sundo numero");
+			System.out.println("Dime el sundo numero");
 			
 			String variable24 = scanner24.nextLine();
 			
