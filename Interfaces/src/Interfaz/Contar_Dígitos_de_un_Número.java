@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Contar_Dígitos_de_un_Número {
 	public static void main (String[]args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Dime un numero");
+		System.out.println("Dime un numero");
 		String variable= scanner.nextLine();
 		
 		int numero = Integer.parseInt(variable);
