@@ -3,20 +3,20 @@ import java.util.Scanner;
 public class Determinar_el_Mayor_de_Tres_Números {
 	public static void main (String[]args) {
 		Scanner scanner1 = new Scanner(System.in);
-		System.out.print("Dime tres numeros y te digo cual es el mayor de todos");
-		System.out.print("Dime el primer numero");
+		System.out.println("Dime tres numeros y te digo cual es el mayor de todos");
+		System.out.println("Dime el primer numero");
 		String variable1 = scanner1.nextLine();
 		
 		int numero1 = Integer.parseInt(variable1);
 		
 		Scanner scanner2 = new Scanner(System.in);
-		System.out.print("Dime el segundo numero");
+		System.out.println("Dime el segundo numero");
 		String variable2 = scanner2.nextLine();
 		
 		int numero2 = Integer.parseInt(variable2);
 
 		Scanner scanner3 = new Scanner(System.in);
-		System.out.print("Dime el tercer numero");
+		System.out.println("Dime el tercer numero");
 		String variable3 = scanner3.nextLine();
 		
 		int numero3 = Integer.parseInt(variable3);
