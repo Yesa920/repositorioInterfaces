@@ -12,7 +12,7 @@ public class Suma_de_los_dígitos_de_un_número {
         while (numero > 0) {
             int digito = numero % 10;
             resultado += digito;
-            numero /= 10; 
+            numero = numero / 10; 
         }
 
         System.out.println("La suma de los dígitos es: " + resultado);
