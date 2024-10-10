@@ -7,7 +7,7 @@ public class Suma_de_los_dígitos_de_un_número {
         System.out.println("Ingresa un número entero: ");
         int numero = scanner.nextInt();
         int resultado = 0;
-        numero = Math.abs(numero);
+       
 
         while (numero > 0) {
             int digito = numero % 10;
