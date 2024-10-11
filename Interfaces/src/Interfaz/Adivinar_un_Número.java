@@ -25,6 +25,6 @@ public class Adivinar_un_Número {
 			 
 			 
 		 }
-		 scanner.close();
+		
 	}
 }
