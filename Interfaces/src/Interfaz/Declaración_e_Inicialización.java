@@ -6,7 +6,7 @@ public class Declaración_e_Inicialización {
         
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = i + 1;
-            System.out.println("Vas por el numero "+ numeros);
+            System.out.println("Vas por el numero "+ numeros[i]);
         }
     }
 
