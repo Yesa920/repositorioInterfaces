@@ -16,6 +16,6 @@ public class Contar_Vocales_en_un_Array_de_Caracteres {
 				vocales++;
 			}
 		}
-		System.out.println("Tiene" + vocales);
+		System.out.println("Tiene" + vocales+ "vocales");
 	}
 }
