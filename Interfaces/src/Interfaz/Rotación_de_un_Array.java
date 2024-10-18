@@ -13,7 +13,7 @@ public class Rotación_de_un_Array {
         
         System.out.println("El array final es :");
         for (int i = 0; i < numeros.length; i++) {
-            System.out.println(numeros[i] + " ");
+            System.out.print(numeros[i] + " ");
 		
         }
 	}
