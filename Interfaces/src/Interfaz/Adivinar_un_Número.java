@@ -6,13 +6,11 @@ public class Adivinar_un_Número {
 		 Random random = new Random();
 		 int numeroAleatorio = random.nextInt(100) + 1;
 		 Scanner scanner = new Scanner(System.in);
-			System.out.print("Intenta adivinar el numero");
-			String variable = scanner.nextLine();
+			System.out.println("Intenta adivinar el numero");
+		 for(int i=0; i<=200;i++) {	
 			
-			int numero = Integer.parseInt(variable);
-			
-		 while(numero != numeroAleatorio) {
-			 numero = scanner.nextInt();
+			int numero = scanner.nextInt();
+				
 			 if(numero>numeroAleatorio){
 				 System.out.println("El numero es más pequeño");
 			 }
@@ -22,9 +20,7 @@ public class Adivinar_un_Número {
 			 else{
 				 System.out.println("Has adivinado");
 			 }
-			 
-			 
-		 }
-		
+		} 
+	
 	}
 }
