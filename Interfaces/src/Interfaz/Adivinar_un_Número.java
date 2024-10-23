@@ -19,6 +19,7 @@ public class Adivinar_un_Número {
 			 }
 			 else{
 				 System.out.println("Has adivinado");
+				 break;
 			 }
 		} 
 	
