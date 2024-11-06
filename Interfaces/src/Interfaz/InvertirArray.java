@@ -1,6 +1,6 @@
 package Interfaz;
 
-public class sdas {
+public class InvertirArray {
 	 public static void main(String[] args) {
 	        // Crear un array de 5 números enteros
 	        int[] numeros = {1, 2, 3, 4, 5};
