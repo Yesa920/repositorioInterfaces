@@ -52,7 +52,7 @@ public class Juego {
 		int contarBarco3 = 0;
 		int contarBarco4 = 0;
 		int contarBarco5 = 0;
-		while (contarBarcos <= 7) {
+		while (contarBarcos < 7) {
 			boolean suficientesBarcos = false;
 			System.out.print("Ingrese fila (0-9): (El numero de arriba)");
 			int fila = leer.nextInt();
