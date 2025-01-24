@@ -115,6 +115,24 @@ public class Juego {
 					tablero.mostrarTablero();
 				} else {
 					System.out.println("No se pudo colocar el barco. Verifique los datos e intente nuevamente.");
+					switch (tamano) {
+					case 2:
+						contarBarco2--;
+						contarBarcos--;
+						break;
+					case 3:
+						contarBarco3--;
+						contarBarcos--;
+						break;
+					case 4:
+						contarBarco4--;
+						contarBarcos--;
+						break;
+					case 5:
+						contarBarco5--;
+						contarBarcos--;
+						break;
+					}
 				}
 			} else {
 
