@@ -32,11 +32,12 @@ public class GenerarExcel {
 		XSSFCell cell6 = row0.createCell(5);
 
     // Crear estilos
-    estiloCelda.setFillForegroundColor(IndexedColors.AQUA.getIndex()); 
-    estiloCelda.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+   		CellStyle estiloCelda = workbook.createCellStyle();
+		estiloCelda.setFillForegroundColor(IndexedColors.AQUA.getIndex());
+		estiloCelda.setFillPattern(FillPatternType.SOLID_FOREGROUND);
 
     //Establecemos valores a las celdas
-    cell1.setCellValue("Horas");
+    		cell1.setCellValue("Horas");
 		cell1.setCellStyle(estiloCelda);
 		cell2.setCellValue("Lunes");
 		cell2.setCellStyle(estiloCelda);
@@ -53,7 +54,7 @@ public class GenerarExcel {
     // Poner tamagno a las celdas
 		sheet.autoSizeColumn(0);
 
-try (FileOutputStream fileOut = new FileOutputStream("estilos_izan.xlsx")) {
+		try (FileOutputStream fileOut = new FileOutputStream("estilos_izan.xlsx")) {
 			workbook.write(fileOut);
 		}
 
