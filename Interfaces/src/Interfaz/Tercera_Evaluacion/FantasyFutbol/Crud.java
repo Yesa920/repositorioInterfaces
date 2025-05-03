@@ -108,7 +108,54 @@ public class Crud {
 			Connection myConexion = DriverManager.getConnection(url, userBD, passBD);
 
 			// 2. CREAR OBJETO STATEMENT
-			PreparedStatement preparedStatement = myConexion.prepareStatement("SELECT * FROM Jugador where posicion=?");
+			PreparedStatement preparedStatement = myConexion
+					.prepareStatement("SELECT * FROM Jugador where nombre=? AND posicion=?");
+
+			preparedStatement.setString(1, nombre);
+			preparedStatement.setString(2, posicion);
+
+			// 3. EJECUTAR SQL
+			ResultSet miResulset = preparedStatement.executeQuery();
+
+			// 4. Leer resultset
+			while (miResulset.next()) {
+
+				// cliente = new modelo.Cliente.Cliente();
+				Jugador jugador = new Jugador();
+				/*
+				 * System.out.println("_____________________________________");
+				 * 
+				 * System.out.println("Nombre:  " + miResulset.getString("nombre") + " ");
+				 * jugador.setNombre(miResulset.getString("nombre"));
+				 * 
+				 * System.out.println("Posicion: " + miResulset.getString("posicion") + " ");
+				 * jugador.setPosicion(miResulset.getString("posicion"));
+				 * 
+				 * System.out.println("Precio: " + miResulset.getString("precio") + " ");
+				 * jugador.setPrecio(miResulset.getDouble("precio"));
+				 */
+			}
+
+		} catch (Exception e) {
+			System.out.println("No conecta!! " + e);
+		}
+
+		return jugadorLista;
+
+	}
+
+	public static double getValorJugadorByNameAndPosition(String nombre, String posicion) {
+
+		double precio = 0;
+
+		try {
+
+			// 1.CREAR CONEXION
+			Connection myConexion = DriverManager.getConnection(url, userBD, passBD);
+
+			// 2. CREAR OBJETO STATEMENT
+			PreparedStatement preparedStatement = myConexion
+					.prepareStatement("SELECT precio FROM Jugador where nombre=? AND posicion=?");
 
 			preparedStatement.setString(1, nombre);
 			preparedStatement.setString(2, posicion);
@@ -122,25 +169,26 @@ public class Crud {
 				// cliente = new modelo.Cliente.Cliente();
 				Jugador jugador = new Jugador();
 
-				System.out.println("_____________________________________");
-
-				System.out.println("Nombre:  " + miResulset.getString("nombre") + " ");
-				jugador.setNombre(miResulset.getString("nombre"));
-
-				System.out.println("Posicion: " + miResulset.getString("posicion") + " ");
-				jugador.setPosicion(miResulset.getString("posicion"));
-
-				System.out.println("Precio: " + miResulset.getString("precio") + " ");
-				jugador.setPrecio(miResulset.getDouble("precio"));
-
+				/*
+				 * System.out.println("_____________________________________");
+				 * 
+				 * System.out.println("Nombre:  " + miResulset.getString("nombre") + " ");
+				 * jugador.setNombre(miResulset.getString("nombre"));
+				 * 
+				 * System.out.println("Posicion: " + miResulset.getString("posicion") + " ");
+				 * jugador.setPosicion(miResulset.getString("posicion"));
+				 * 
+				 * System.out.println("Precio: " + miResulset.getString("precio") + " ");
+				 * jugador.setPrecio(miResulset.getDouble("precio")); precio =
+				 * jugador.getPrecio();
+				 */
 			}
 
 		} catch (Exception e) {
 			System.out.println("No conecta!! " + e);
 		}
 
-		return jugadorLista;
-
+		return precio;
 	}
 
 	public void insertJugador(String nom, String pos, double pre) throws SQLException {
@@ -162,7 +210,7 @@ public class Crud {
 	public static void deleteFromJugadores(String nom, String pos) throws SQLException {
 		Connection myConexion = DriverManager.getConnection(url, userBD, passBD);
 
-		String insert = "DELETE FROM Jugador where nombre=?";
+		String insert = "DELETE FROM Jugador where nombre=? and posicion=?";
 
 		PreparedStatement miStatement = myConexion.prepareStatement(insert);
 
